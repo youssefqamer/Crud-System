@@ -1,0 +1,19 @@
+table{
+  min-width: 1000px
+}
+.box{
+  width: 50%;
+}
+@media (max-width:767px){
+  .box{
+    width: 80%;
+  }
+}
+.search{
+  width: 35% ;
+}
+@media(max-width:767px){
+  .search{
+    width: 75% ;
+  }
+}

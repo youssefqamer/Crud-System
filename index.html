@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  <title>Crud System</title>
+</head>
+<body>
+  <div class="container ">
+<div class=" box m-auto p-5 shadow-lg mt-5">
+        <h1>CRUD SYSTEM</h1> 
+        <label >ProductName:</label>
+        <input type="text" class="form-control" id="ProductName">
+        <p class="alert alert-danger f-alert mt-2 d-none">Please Start With Capital letter</p>
+        <p class="alert alert-danger s-alert mt-2 d-none">Please Write at least one small letter</p>
+        <p class="alert alert-danger required mt-2 d-none">this input is required</p>
+        
+        <label>ProductCategory:</label>
+        <input type="text" class="form-control" id="ProductCategory">
+        <p class="alert alert-danger category-alert mt-2 d-none">At least two letters</p>
+
+        <label>ProductPrice:</label>
+        <input type="number" class="form-control" id="ProductPrice">
+    
+        <label>ProductDescription:</label>
+        <textarea class="form-control mb-4" id="ProductDescription"></textarea>
+        <p class="alert alert-danger all-inputs mt-2 d-none">All input are required</p>
+        <button onclick=" createProduct(); " class="btn btn-outline-success" id="add">add product</button>
+        <button class="btn btn-outline-success" onclick="clearForm()"> clear</button>
+    
+</div>
+<input type="text" placeholder="search...."  class="form-control mt-4 search  m-auto" id="search" onkeyup="searchData()">
+</div>
+
+<div class="table-responsive">
+<table class="table w-75 m-auto mt-5 text-center table-striped ">
+  <thead>
+    <th>index</th>
+    <th>name</th>
+    <th>category</th>
+    <th>price</th>
+    <th>description</th>
+    <th>update</th>
+    <th>delete</th>
+    
+  </thead>
+  <tbody id="tbody">
+
+  </tbody>
+</table>
+</div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
